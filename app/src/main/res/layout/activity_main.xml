@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Buying value"
+        android:textSize="16dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:text="Selling value"
+        android:textSize="16dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Vrijednost"
+        android:textSize="24dp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/buying_spinner"
+        android:layout_width="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <Spinner
+        android:id="@+id/selling_spinner"
+        android:layoutDirection="rtl"
+        android:layout_width="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/button_layout"
+        android:text="Izračunaj"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/calculate"/>
+
+
+        <EditText
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/buying_spinner"
+            android:padding="6dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/editetext_layout"
+            android:id="@+id/buying_edite_text"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+
+
+</RelativeLayout>
